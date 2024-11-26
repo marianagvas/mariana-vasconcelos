@@ -14,7 +14,7 @@ export default defineConfig(({ mode }) => {
   console.log(`isProduction: ${ isProduction }`)
 
   return {
-    base: true ? '/mariana-vasconcelos/' : '/',
+    base: false ? '/mariana-vasconcelos/' : '/',
     plugins: [
       Vue({
         template: { transformAssetUrls }
