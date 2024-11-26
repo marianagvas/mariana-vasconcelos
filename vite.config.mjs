@@ -9,12 +9,9 @@ import { defineConfig } from 'vite'
 import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }) => {
-  const isProduction = mode === 'production';
-  console.log(`isProduction: ${ isProduction }`)
-
+export default defineConfig(() => {
   return {
-    base: false ? '/mariana-vasconcelos/' : '/',
+    base: '/',
     plugins: [
       Vue({
         template: { transformAssetUrls }
